@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>To-Do List App</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <h1>My To-Do List</h1>
+
+    <p>Organize your daily tasks easily!</p>
+
+    <!-- Add Task Section -->
+
+    <div class="task-input">
+
+        <input type="text" id="task-input"
+            placeholder="Enter your task">
+
+        <button id="add-btn">Add Task</button>
+
+    </div>
+
+    <!-- Filter Buttons -->
+
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="pending">
+            Pending
+        </button>
+
+        <button class="filter-btn" data-filter="completed">
+            Completed
+        </button>
+
+    </div>
+
+    <!-- Task List -->
+
+    <h2>My Tasks</h2>
+
+    <ul id="task-list"></ul>
+
+    <!-- Task Counter -->
+
+    <div class="task-counter">
+
+        <span id="total-tasks">Total Tasks: 0</span>
+
+        <span id="completed-tasks">Completed: 0</span>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
